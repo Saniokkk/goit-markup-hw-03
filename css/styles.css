@@ -14,6 +14,20 @@ body {
   color: var(--text-color);
   background-color: var(--primary-background-color);
 }
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+}
 
 .link.current {
   color: var(--accent-color);
@@ -41,16 +55,53 @@ body {
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
+  padding-left: 215px;
 }
 
 /* -----HEADER----- */
 
 .header {
   background-color: #ffffff;
+  height: 80px;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+}
+
+.logo {
+  padding-top: 24px;
+  padding-right: 93px;
+  padding-bottom: 25px;
+}
+.header-contacts {
+  display: flex;
+  margin-right: 0;
+  margin-left: auto;
+}
+.header-contacts .header-contacts-link + .header-contacts-link {
+  margin-left: 50px;
+}
+
+.header-contacts .contacts-item + .contacts-item {
+  margin-left: 50px;
+}
 .header-logo {
   color: var(--header-logo);
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-item:not(:first-child) {
+  margin-left: 50px;
 }
 
 .header-link {
