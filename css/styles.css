@@ -14,8 +14,8 @@ body {
   color: var(--text-color);
   background-color: var(--primary-background-color);
 }
+
 p,
-ul,
 h1,
 h2,
 h3,
@@ -25,8 +25,20 @@ h6 {
   margin: 0;
 }
 
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
 .container {
   width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid red;
 }
 
 .link.current {
@@ -55,14 +67,13 @@ h6 {
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
-  padding-left: 215px;
 }
 
 /* -----HEADER----- */
 
 .header {
   background-color: #ffffff;
-  height: 80px;
+  /* height: 80px; */
 }
 
 .header-container {
@@ -76,12 +87,11 @@ h6 {
 
 .logo {
   padding-top: 24px;
-  padding-right: 93px;
+  margin-right: 93px;
   padding-bottom: 25px;
 }
 .header-contacts {
   display: flex;
-  margin-right: 0;
   margin-left: auto;
 }
 .header-contacts .header-contacts-link + .header-contacts-link {
@@ -98,6 +108,7 @@ h6 {
 .header-list {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .header-item:not(:first-child) {
@@ -138,6 +149,11 @@ h6 {
   background: var(--secondary-background-color);
 }
 
+.hero-container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -145,6 +161,9 @@ h6 {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  display: block;
+  width: 696px;
+  margin: 0 auto 30px auto;
   color: #ffffff;
 }
 
@@ -152,12 +171,17 @@ h6 {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   background: var(--accent-color);
   color: #ffffff;
+  display: block;
+
+  min-width: 200px;
+  min-height: 50px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  margin: 0 auto;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -178,14 +202,41 @@ h6 {
   line-height: 1.71;
 }
 
+.advantages-list {
+  display: flex;
+}
+
+.advantages-item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.advantages-item {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* -----WORK----- */
 .work-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  padding-bottom: 50px;
 }
 
+.work-list {
+  display: flex;
+  margin-left: -30px;
+}
+
+.work-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.work-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+}
 /* -----COMMAND----- */
 .command {
   background-color: #f5f4fa;
