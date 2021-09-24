@@ -32,6 +32,8 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .container {
   width: 1200px;
@@ -83,13 +85,9 @@ img {
 
 .header-navigation {
   display: flex;
+  align-items: center;
 }
 
-.logo {
-  padding-top: 24px;
-  margin-right: 93px;
-  padding-bottom: 25px;
-}
 .header-contacts {
   display: flex;
   margin-left: auto;
@@ -103,6 +101,7 @@ img {
 }
 .header-logo {
   color: var(--header-logo);
+  margin-right: 93px;
 }
 
 .header-list {
@@ -113,6 +112,8 @@ img {
 
 .header-item:not(:first-child) {
   margin-left: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-link {
@@ -195,6 +196,18 @@ img {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 .advantages-text {
@@ -246,6 +259,8 @@ img {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 
 .command-name-title {
@@ -253,12 +268,28 @@ img {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .command-text {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+
+.command-list {
+  display: flex;
+  margin-left: -30px;
+}
+
+.command-item {
+  box-sizing: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  padding-bottom: 94px;
+}
+
+.command-foto {
+  padding-bottom: 30px;
 }
 
 /* -----FOOTER----- */
@@ -282,6 +313,15 @@ img {
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-container > a {
+  display: block;
+  margin-bottom: 20px;
 }
 
 /* -----PROJECTS----- */
@@ -309,4 +349,13 @@ img {
   font-size: 16px;
   line-height: 1.87;
   color: var(--text-color);
+}
+
+.projects-filter {
+  display: flex;
+  justify-content: center;
+}
+
+.projects-list {
+  display: flex;
 }
